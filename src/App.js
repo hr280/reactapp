@@ -1,12 +1,18 @@
 import React from 'react';
-import './App.css';
+import Hello from './Hello';
+import './App.css' 
 
-function App() {
-  return (
+function App(){
+  return(
     <div className="App">
-       <h1>Hello world</h1>
-     </div>
+     <Hello name="Hassan Raza" and Name="Ghulam Mustafa" />
+     <Hello name="Ahmad Raza" and Name="Ghulam Mustafa" />
+     <Hello name="Ali Raza" and Name="Ghulam Mustafa" />
+     <Hello name="Ghulam Murtaza" and Name="Ghulam Mustafa"/>
+    </div>
   );
-}
-
+} 
 export default App;
+
+// https://github.com/MuhammadMohsin/PanacloudBootcamp2020
+//https://github.com/aamirpinger/bootcamp-2020
