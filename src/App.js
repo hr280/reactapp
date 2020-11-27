@@ -1,18 +1,23 @@
-import React from 'react';
-import Hello from './Hello';
-import './App.css' 
+import React, {useState} from 'react'
+import Message from './Message'
+import './App.css'
 
-function App(){
+function App (){
+  let[count, setCount] = useState(1);
+  let[isMorning, setMorning ] = useState(false)
+
   return(
-    <div className="App">
-     <Hello name="Hassan Raza" and Name="Ghulam Mustafa" />
-     <Hello name="Ahmad Raza" and Name="Ghulam Mustafa" />
-     <Hello name="Ali Raza" and Name="Ghulam Mustafa" />
-     <Hello name="Ghulam Murtaza" and Name="Ghulam Mustafa"/>
-    </div>
-  );
-} 
-export default App;
+    <div className={`inp ${isMorning ? 'dayL' : ''}`}>
+      <h1>Day Time = {isMorning ? 'Day' : 'Night'}</h1>
+      <Message counter={count} />
 
-// https://github.com/MuhammadMohsin/PanacloudBootcamp2020
-//https://github.com/aamirpinger/bootcamp-2020
+      <br/>
+   <div className="btn">
+      <button  onClick={()=>setCount(count+1)}>Update Counter </button> 
+      <button  onClick={()=>setMorning(!isMorning)}>Update Day </button> 
+
+    </div>
+  </div> 
+  )
+}
+export default App

@@ -1,5 +1,22 @@
-.App {
-  text-align: center;
-  color: antiquewhite;
+.inp{
+  height: 500px;
   background-color: black;
- }
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-style: oblique;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.dayL{
+  background-color: yellow;
+  color: black;
+  font-style: oblique;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn{
+    font-size: large;
+    box-sizing: border-box;
+    
+    
+
+}
